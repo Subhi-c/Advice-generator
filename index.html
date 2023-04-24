@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app BY Subhi-c</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&&display=swap');
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color:hsl(218, 23%, 16%);
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 10px;
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 100%;
+  width: 800px;
+}
+.divider{
+  margin: 20px 0 30px;
+    background-size: 100% 100%;
+    width: 100%;
+}
+h3 {
+  color: hsl(150, 100%, 66%);
+  margin: 0;
+  opacity: 0.5;
+  letter-spacing: 2px;
+}
+.qoutes {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  margin: 50px auto;
+  max-width: 600px;
+  color: white;
+}
+.btn {
+  background-color: #113f67;
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 40px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:focus {
+  outline: 0;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+#imgMob{
+  display:none;
+}
+.dice{
+  bottom:-10% ;left: 45%; right: 55%;
+}
+#imgDes{
+  display: block;
+}
+    .attribution { font-size: 14px; text-align: center; }
+    .attribution a { color: hsl(0, 0%, 100%); }
+    @media(max-width: 400px){
+     .dice{
+      bottom: -5%;
+      left: 40%;
+      right: 60%;
+     }
+}
+    
+  </style>
+</head>
+<body>
+
+    <div class="container" style="position
+  :relative">
+    <h3>Advice # <span id="idNo"></span></h3>
+    <div id="qoutes" class="qoutes"></div>
+    <!-- <button id="qoute-btn" class="btn">Get another qoute</button> -->
+   <!-- <img id="imgMob" src="images/pattern-divider-mobile.svg" alt="">  -->
+    <!-- <svg width="444" height="16" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path fill="#4F5D74" d="M0 8h196v1H0zM248 8h196v1H248z"/><g transform="translate(212)" fill="#CEE3E9"><rect width="6" height="16" rx="3"/><rect x="14" width="6" height="16" rx="3"/></g></g></svg> -->
+   <img id="imgDes" src="images/pattern-divider-desktop.svg" alt="Image of Divider" class="divider"> 
+    <div class="dice" style="position:
+    absolute ;  ">
+    <button style="border-radius: 50%;border: none;  padding:15px;margin:15px;background-color: hsl(150, 100%, 66%);"><svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20 0H4a4.005 4.005 0 0 0-4 4v16a4.005 4.005 0 0 0 4 4h16a4.005 4.005 0 0 0 4-4V4a4.005 4.005 0 0 0-4-4ZM7.5 18a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm4.5 4.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Zm0-9a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3Z" fill="#202733"/></svg>
+    </button>
+    </div>
+  </div>
+  <div class="attribution" style="margin-top: 30px;color:white">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Subhi-c">Subhi-c</a>.
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
